@@ -1,3 +1,4 @@
+<jsp:useBean id="name" scope="request" type="java.lang.String"/>
 <%--
   Created by IntelliJ IDEA.
   User: farhad1
@@ -11,6 +12,6 @@
     <title>Yahoo</title>
 </head>
 <body>
-    My First JSP
+    My First JSP ${name}
 </body>
 </html>
