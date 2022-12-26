@@ -1,17 +1,20 @@
-<%--<jsp:useBean id="name" scope="request" type="java.lang.String"/>--%>
-<%--
-  Created by IntelliJ IDEA.
-  User: farhad1
-  Date: 12/26/2022
-  Time: 4:44 PM
-  To change this template use File | Settings | File Templates.
---%>
+<jsp:useBean id="password" scope="request" type="java.lang.String"/>
+<jsp:useBean id="name" scope="request" type="java.lang.String"/>
+
+<%@ page import="java.util.Date" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>Yahoo</title>
 </head>
 <body>
-    My First JSP ${name}
+<%//not recommended
+    System.out.println(request.getParameter("name"));
+    Date date = new Date();
+%>
+<div>
+    Current date is <%=date%>
+</div>
+My Name is ${name} and Password is ${password}
 </body>
 </html>
