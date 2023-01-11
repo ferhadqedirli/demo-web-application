@@ -4,16 +4,21 @@
     <title>Yahoo</title>
 </head>
 <body>
-<%//not recommended
+<%
+    //not recommended
     System.out.println(request.getParameter("name"));
 %>
 <div>
 </div>
 <form action="${pageContext.request.contextPath}/login.do" method="post">
-    Enter your name <label>
-    <input type="text" name="name"/>
-    <input type="submit" value="Login">
-</label>
+    <label>
+        <p>
+            <span style="color: red; ">${errorMessage}</span>
+        </p>
+        Name: <input type="text" name="name"/>
+        Password: <input type="password" name="password"/>
+        <input type="submit" value="Login">
+    </label>
 </form>
 </body>
 </html>
