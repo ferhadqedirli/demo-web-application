@@ -13,7 +13,7 @@
 <form action="${pageContext.request.contextPath}/login.do" method="post">
     <label>
         <p>
-            <span style="color: red; ">${errorMessage}</span>
+            <span style="color: #a10000; ">${errorMessage}</span>
         </p>
         Name: <input type="text" name="name"/>
         Password: <input type="password" name="password"/>
