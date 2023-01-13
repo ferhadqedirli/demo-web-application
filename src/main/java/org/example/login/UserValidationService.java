@@ -1,4 +1,6 @@
-package org.example;
+package org.example.login;
+
+import org.springframework.stereotype.Component;
 
 public class UserValidationService {
 

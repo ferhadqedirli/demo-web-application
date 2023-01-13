@@ -6,7 +6,7 @@
 <body>
 <div>
 </div>
-<form action="${pageContext.request.contextPath}/spring-mvc/login" method="post">
+<form action="${pageContext.request.contextPath}/login" method="post">
     <label>
         <p>
             <span style="color: #a10000; ">${errorMessage}</span>
