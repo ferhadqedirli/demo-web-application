@@ -4,13 +4,9 @@
     <title>Yahoo</title>
 </head>
 <body>
-<%
-    //not recommended
-    System.out.println(request.getParameter("name"));
-%>
 <div>
 </div>
-<form action="${pageContext.request.contextPath}/login.do" method="post">
+<form action="${pageContext.request.contextPath}/spring-mvc/login" method="post">
     <label>
         <p>
             <span style="color: #a10000; ">${errorMessage}</span>

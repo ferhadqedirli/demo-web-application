@@ -4,7 +4,7 @@
 </head>
 <body>
 <div>
-    Welcome ${name}
+    Welcome ${name} and password is ${password}
 </div>
 </body>
 </html>
