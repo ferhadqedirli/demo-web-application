@@ -1,7 +1,8 @@
 package org.example.login;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
+@Service
 public class UserValidationService {
 
     public boolean isValidUser(String user, String password) {
